@@ -1,3 +1,5 @@
+![a doc勉強会](https://res.cloudinary.com/mca62511/image/upload/v1639554954/adb_bqy5ek.png)
+
 # a doc勉強会
 株式会社エスツーの勉強会の資料を保管するためのリポジトリです。
 
