@@ -4,13 +4,13 @@
 
 もっと聞きたい、知りたいというテーマがあれば、ぜひお知らせください。
 
-[Googleフォームによるアンケート](https://example.com)
+[Googleフォームによるアンケート](https://forms.gle/pfBPyRyHriaZHEHK9)
 
 ## 発表したいことを伝える
 
 あなたの知識は会社のためになる! プレゼンを希望する場合は、名前と内容（決まっていれば）をお知らせください。
 
-[Googleフォームによるアンケート](https://example.com)
+[Googleフォームによるアンケート](https://forms.gle/AJDPwQ9vQAxgvxAm7)
 
 ----
 
