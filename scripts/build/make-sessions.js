@@ -3,7 +3,9 @@ const fs = require("fs");
 module.exports = {
   makeSessions: function makeSessions() {
     let sessions = [];
-    const sessionDates = fs.readdirSync("./sessions").sort();
+    const sessionDates = fs
+      .readdirSync("./sessions")
+      .sort((a, b) => (new Date(a).getTime() > new Date(b).getTime() ? -1 : 1));
 
     for (let i = 0; i < sessionDates.length; i++) {
       const date = sessionDates[i];

@@ -1,7 +1,6 @@
 const fs = require("fs");
 
-const removeFirstCharacter = (string) =>
-  string.indexOf(0) == "0" ? string.substring(1) : string;
+const removeFirstCharacter = (string) => string.substring(1);
 
 const renderForMD = (sessions) => {
   return sessions

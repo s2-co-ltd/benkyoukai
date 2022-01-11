@@ -6,19 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adoc 勉強会</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            background: #f2f2f2;
+            font-family: sans-serif;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+
+        #flex-wrapper {
+            min-height: 100vh;
+            min-width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            background: white;
+            padding: 1em;
+            margin: 1em;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0px 4px 8px 0px rgba(33,33,33,.3);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>a doc勉強会</h1>
-    <p>株式会社エスツーの勉強会の資料を保管するためのリポジトリです。</p>
-    <ul>
-        !!SESSION_INFORMATION_HERE!!
-    </ul>
-    <hr />
-    <p>
-        以上、最近の5回のセッションをご紹介しました。<br />
-        過去のセッションにアクセスするには、<a href="https://github.com/s2-co-ltd/benkyoukai/blob/main/archive.md">アーカイブ</a>をご覧ください。
-    </p>
+    <div id="flex-wrapper">
+        <main>
+            <h1 class="is-size-1">a doc勉強会</h1>
+            <p>株式会社エスツーの勉強会の資料を保管するためのリポジトリです。</p>
+            <br />
+            <ul>
+                !!SESSION_INFORMATION_HERE!!
+            </ul>
+            <hr />
+            <p>
+                以上、最近の5回のセッションをご紹介しました。<br />
+                過去のセッションにアクセスするには、<a
+                    href="https://github.com/s2-co-ltd/benkyoukai/blob/main/archive.md">アーカイブ</a>をご覧ください。
+            </p>
+        </main>
+    </div>
 </body>
 
 </html>
