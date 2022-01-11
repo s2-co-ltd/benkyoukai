@@ -18,7 +18,7 @@ async function kanjiToKatakana(source) {
 
 async function convertKanji(names) {
   for (let i = 0; i < names.length; i++) {
-    n = names[i];
+    const n = names[i];
     n.converted = await kanjiToKatakana(n.original);
   }
   return names;
