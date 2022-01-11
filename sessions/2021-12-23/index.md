@@ -1,10 +1,10 @@
-# セッション 0
+# セッション 0 - 勉強会について
 
-## 勉強会について
-## 2021-12-02
+**発表者： オーブリー・マイケル・チャールズ**
+
+**日付： 2021-12-02**
 
 勉強会や学びの文化を作るためのコンセプトを紹介します。
-
 ## 資料
 
  * [プレゼン](https://docs.google.com/presentation/d/1F-YqbxPDtGe0zvzH12DIPPiNbHftghl5jFdGZn5_Xvc/edit?usp=sharing)
