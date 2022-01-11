@@ -12,14 +12,20 @@ module.exports = {
       const path = `./sessions/${date}/index.md`;
       const data = fs.readFileSync(path).toString();
       const parts = data
-        .split("#")
+        .split("\n")
         .map((a) => a.trim())
         .filter((a) => a !== "");
 
-      const number = parts[0];
-      const title = parts[1];
+      const numberAndTitle = parts[0].split("-");
+
+      const number = numberAndTitle.shift().substring(1).trim();
+
+      const title = numberAndTitle.join("-").trim();
+
+      const presenter = parts[1].split("： ")[1].trim();
 
       sessions.push({
+        presenter,
         date,
         number,
         title,

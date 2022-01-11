@@ -10,6 +10,7 @@ const build = async () => {
   const readmeSessions = makeReadmeSessions(sessions);
   console.log("Session data built.");
 
+
   console.log("Writing README.md");
   fs.writeFileSync(
     "./README.md",
