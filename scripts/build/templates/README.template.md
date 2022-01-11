@@ -4,9 +4,7 @@
 
 # セッション
 
-* 2021-12-23 - [セッション0](./sessions/2021-12-23/index.md) - 勉強会について
-* 2022-01-13 - [セッション1](./sessions/2022-01-13/index.md) - node入門
-* 2022-01-20 - [セッション２](./sessions/2022-01-20/index.md) - Electron
+!!SESSION_INFORMATION_HERE!!
 
 ------
 

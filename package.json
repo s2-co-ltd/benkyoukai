@@ -1,0 +1,19 @@
+{
+  "name": "benkyoukai",
+  "version": "1.0.0",
+  "description": "勉強会レポジトリを管理するツール",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./scripts/build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s2-co-ltd/benkyoukai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s2-co-ltd/benkyoukai/issues"
+  },
+  "homepage": "https://github.com/s2-co-ltd/benkyoukai#readme"
+}
