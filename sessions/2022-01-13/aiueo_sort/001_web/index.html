@@ -59,6 +59,17 @@
     <script>
         let state = [];
 
+        /* この関数は、オブジェクトの配列を受け取り、それらを五十音順で並べ替えます。
+           期待したオブジェクトはこの感じです。
+            [
+                {
+                    "original": "きしだ"
+                },
+                                {
+                    "original": "あべ"
+                },
+            ]
+        */
         const aiueoOrder = function aiueoOrder(arr) {
             return arr
                 .map(function (itemData) {
