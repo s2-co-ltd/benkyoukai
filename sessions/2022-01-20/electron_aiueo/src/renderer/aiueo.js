@@ -1,4 +1,7 @@
-const aiueoOrder = function aiueoOrder(arr) {
+const convertKanji = require("./convert-kanji");
+
+async function aiueoOrder(arr) {
+  await convertKanji(arr);
   return arr
     .map(function (itemData) {
       if (!itemData.converted) {
@@ -93,6 +96,6 @@ const aiueoOrder = function aiueoOrder(arr) {
     .sort(function (a, b) {
       return a.converted.localeCompare(b.converted, "ja");
     });
-};
+}
 
-export default aiueoOrder;
+module.exports = aiueoOrder;

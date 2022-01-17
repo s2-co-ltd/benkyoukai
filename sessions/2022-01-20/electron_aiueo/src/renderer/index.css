@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   font-family: sans-serif;
   background: #f2f2f2;
 }
@@ -17,12 +18,13 @@ ul {
   margin-top: 1em;
   list-style-type: none;
 }
+
 ul li {
   background: white;
   padding: 1em;
   margin-bottom: 1px;
   border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(33,33,33,.3);
+  box-shadow: 0 4px 8px 0 rgba(33, 33, 33, 0.3);
 }
 
 .input-bar {

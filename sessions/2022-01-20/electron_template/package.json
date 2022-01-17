@@ -1,0 +1,38 @@
+{
+  "name": "electron-builder-template",
+  "version": "1.0.0",
+  "description": "A simple electron-builder template.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:windows": "electron-builder --dir && electron-builder build --win --publish never",
+    "build:windows:portable": "electron-builder --dir && electron-builder build --win --publish never",
+    "build:mac": "electron-builder --dir && electron-builder build --mac --publish never",
+    "build:linux": "electron-builder --dir && electron-builder build --linux --publish never"
+  },
+  "build": {
+    "productName": "Electron Builder Template",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "./icons/icon.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "./icons/icon.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "./icons/icon.png"
+    }
+  },
+  "author": "株式会社エスツー",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5"
+  },
+  "dependencies": {
+    "kuroshiro": "~1.1.2",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0"
+  }
+}

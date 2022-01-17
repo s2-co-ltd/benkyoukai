@@ -1,27 +1,16 @@
 const KuromojiAnalyzer = require("kuroshiro-analyzer-kuromoji"); // 別の人が作っていたmoduleはNPMでインストールしたら、自分のプロジェクトで使えます。
 const Kuroshiro = require("kuroshiro"); // 別の人が作っていたmoduleはNPMでインストールしたら、自分のプロジェクトで使えます。
 
-async function kanjiToKatakana(source) {
-  return new Promise((resolve) => {
-    const kuroshiro = new Kuroshiro();
+let kuroshiro;
 
-    kuroshiro
-      .init(new KuromojiAnalyzer())
-      .then(function () {
-        return kuroshiro.convert(source, { to: "katakana" });
-      })
-      .then(function (result) {
-        resolve(result);
-      });
-  });
-}
+async function convertKanji(source) {
+    if (!kuroshiro) {
+        kuroshiro = new Kuroshiro();
+        await kuroshiro.init(new KuromojiAnalyzer());
+    }
+    const result = kuroshiro.convert(source, { to: "katakana" });
 
-async function convertKanji(names) {
-  for (let i = 0; i < names.length; i++) {
-    const n = names[i];
-    n.converted = await kanjiToKatakana(n.original);
-  }
-  return names;
+    return result;
 }
 
 module.exports = convertKanji;

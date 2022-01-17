@@ -11,24 +11,24 @@
         * {
             box-sizing: border-box;
         }
-
+        
         body,
         html {
             font-family: sans-serif;
             background: #f2f2f2;
         }
-
+        
         main {
             max-width: 600px;
             margin: 0 auto;
             padding: 1em;
         }
-
+        
         ul {
             margin-top: 1em;
             list-style-type: none;
         }
-
+        
         ul li {
             background: white;
             padding: 1em;
@@ -36,11 +36,11 @@
             border-radius: 3px;
             box-shadow: 0 4px 8px 0 rgba(33, 33, 33, .3);
         }
-
+        
         .input-bar {
             display: flex;
         }
-
+        
         .left-margin {
             margin-left: 1em;
         }
@@ -50,8 +50,7 @@
 <body>
     <main>
         <div class="input-bar">
-            <input class="input is-rounded" type="text" id="new-word" /><button
-                class="left-margin button is-primary is-rounded" id="add">追加</button>
+            <input class="input is-rounded" type="text" id="new-word" /><button class="left-margin button is-primary is-rounded" id="add">追加</button>
         </div>
         <ul id="list">
         </ul>
@@ -65,14 +64,14 @@
                 {
                     "original": "きしだ"
                 },
-                {
+                                {
                     "original": "あべ"
-                }
+                },
             ]
         */
         const aiueoOrder = function aiueoOrder(arr) {
             return arr
-                .map(function (itemData) {
+                .map(function(itemData) {
                     if (!itemData.converted) {
                         itemData.converted = itemData.original;
                     }
@@ -162,7 +161,7 @@
                         converted: converted,
                     };
                 })
-                .sort(function (a, b) {
+                .sort(function(a, b) {
                     return a.converted.localeCompare(b.converted, "ja");
                 });
         };
@@ -176,22 +175,28 @@
             const list = document.getElementById("list");
             list.innerHTML = "";
 
-            state.forEach(function (itemText) {
+            state.forEach(function(itemText) {
                 const listItem = document.createElement("li");
                 listItem.innerText = itemText.original;
                 list.appendChild(listItem);
             })
         }
 
-        document.getElementById("new-word").addEventListener("keydown", function (e) {
+        document.getElementById("new-word").addEventListener("keydown", function(e) {
             if (e.keyCode === 13) {
-                updateState([...[{ original: e.target.value, converted: "" }], ...state])
+                updateState([...[{
+                    original: e.target.value,
+                    converted: ""
+                }], ...state])
                 document.getElementById("new-word").value = "";
             }
         })
-        document.getElementById("add").addEventListener("click", function (e) {
+        document.getElementById("add").addEventListener("click", function(e) {
             const newWord = document.getElementById("new-word");
-            updateState([...[{ original: newWord.value, converted: "" }], ...state])
+            updateState([...[{
+                original: newWord.value,
+                converted: ""
+            }], ...state])
             newWord.value = "";
         })
     </script>
