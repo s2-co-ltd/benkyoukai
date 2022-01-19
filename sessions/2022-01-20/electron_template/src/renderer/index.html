@@ -12,9 +12,10 @@
 <body>
     <div id="flex-wrapper">
         <main id="main">
-            <p>こんにちは！</p>
-            <p>これを実行したディレクトリには、以下のファイルが含まれています。</p>
-            <ul id="dir-list"></ul>
+            <p id="count">0</p>
+            <p class="explanation">下のボタンを押すと、表示されている数字が増えます。</p>
+            <button onclick="increment()" id="increment">+1</button>
+            <p id="files"></p>
         </main>
     </div>
     <script defer src="index.js"></script>
