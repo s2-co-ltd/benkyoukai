@@ -38,7 +38,11 @@ module.exports = {
     let readmeSessions = [];
     for (let i = 0; i < 5; i++) {
       if (sessions[i]) {
-        readmeSessions.push(sessions[i]);
+        const sT = new Date(sessions[i].date).getTime();
+        const nT = new Date().getTime() + (1000 * 60 * 60 * 24 * 7);
+        if (sT < nT) {
+          readmeSessions.push(sessions[i]);
+        }
       }
     }
     return readmeSessions;
