@@ -8,6 +8,6 @@
 
 ## 資料
 
-* [プレゼン](https://docs.google.com/presentation/d/1OWWe1y02JRh9HtoOnWIhUK78iophGkabuxubwzkDcms/edit?usp=sharing)
+ * [プレゼン](https://docs.google.com/presentation/d/1OWWe1y02JRh9HtoOnWIhUK78iophGkabuxubwzkDcms/edit?usp=sharing)
  * [Electronテンプレート （ソース）](https://github.com/s2-co-ltd/electron-builder-template)
  * [Electronテンプレート （ダウンロード）](https://github.com/s2-co-ltd/benkyoukai/raw/main/downloads/session_2_electron_electron_template.zip)
