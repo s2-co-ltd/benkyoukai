@@ -24,13 +24,17 @@ module.exports = {
 
       const presenter = parts[1].split("： ")[1].trim();
 
-      sessions.push({
-        presenter,
-        date,
-        number,
-        title,
-        path,
-      });
+      const sT = new Date(date).getTime();
+      const nT = new Date().getTime() + 1000 * 60 * 60 * 24 * 7;
+      if (sT < nT) {
+        sessions.push({
+          presenter,
+          date,
+          number,
+          title,
+          path,
+        });
+      }
     }
     return sessions;
   },
