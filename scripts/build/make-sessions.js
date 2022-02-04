@@ -36,13 +36,17 @@ module.exports = {
   },
   makeReadmeSessions: function makeReadmeSessions(sessions) {
     let readmeSessions = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0, j = 0; i < sessions.length; i++) {
       if (sessions[i]) {
         const sT = new Date(sessions[i].date).getTime();
-        const nT = new Date().getTime() + (1000 * 60 * 60 * 24 * 7);
+        const nT = new Date().getTime() + 1000 * 60 * 60 * 24 * 7;
         if (sT < nT) {
           readmeSessions.push(sessions[i]);
+          j = j + 1;
         }
+      }
+      if (j >= 5) {
+        break;
       }
     }
     return readmeSessions;
