@@ -21,12 +21,12 @@ const convertSessionsToEvents = (sessions) => {
   const result = [];
   for (let i = 0; i < sessions.length; i++) {
     const n = buildEventObject(
-      sessions[0].date,
+      sessions[i].date,
       "18:00",
-      sessions[0].date,
+      sessions[i].date,
       "19:00",
-      "勉強会" + sessions[0].number,
-      sessions[0].number + " " + "勉強会" + sessions[0].title,
+      "勉強会" + sessions[i].number,
+      sessions[i].number + " " + "勉強会" + sessions[i].title,
       "https://us02web.zoom.us/j/85816107329?pwd=elVWME5IbkVUM2JodFZOZUM0eXhqZz09",
       "",
       ""
