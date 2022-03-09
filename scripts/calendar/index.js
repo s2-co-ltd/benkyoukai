@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { makeSessions } = require("../build/make-sessions");
+const { makeSessions, makeSessionsAll } = require("../build/make-sessions");
 const ics = require("ics");
 const moment = require("moment");
 
@@ -100,7 +100,7 @@ function buildEventObject(
 const makeCalendar = async () => {
   console.log("Making calendar...");
 
-  const sessions = makeSessions();
+  const sessions = makeSessionsAll();
 
   const events = convertSessionsToEvents(sessions);
 
