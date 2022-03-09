@@ -25,8 +25,8 @@ const convertSessionsToEvents = (sessions) => {
       "18:00:00",
       sessions[i].date,
       "19:00:00",
-      "勉強会" + sessions[i].number,
       sessions[i].number + " " + "勉強会" + sessions[i].title,
+      "勉強会" + sessions[i].number,
       "https://us02web.zoom.us/j/85816107329?pwd=elVWME5IbkVUM2JodFZOZUM0eXhqZz09",
       sessions[i].presenter,
       ""
