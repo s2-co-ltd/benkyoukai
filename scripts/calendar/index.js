@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { makeSessions } = require("../build/make-sessions");
 const ics = require("ics");
-const moment = require('moment');
+const moment = require("moment");
 
 const combineDateAndTime = (d, t) => {
   let isAllDay = false;
@@ -55,6 +55,7 @@ function buildEventObject(
   let eD = new Date(
     moment(new Date(eDTimestamp)).subtract({ hours: 9 }).valueOf()
   );
+
   const sFormatted = moment(sD).format("YYYY-MM-DD HH:mm");
 
   const [fh, sh] = sFormatted.split(" ");
