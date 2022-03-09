@@ -4,11 +4,11 @@
 
 # セッション
 
+* 2022-03-10 - [セッション 9](./sessions/2022-03-10/index.md) - 非同期なJavaScript (Async/Await)
+* 2022-03-03 - [セッション 8](./sessions/2022-03-03/index.md) - Salesforce
 * 2022-02-24 - [セッション 7](./sessions/2022-02-24/index.md) - 開発者のためのUI/UX
 * 2022-02-17 - [セッション 6](./sessions/2022-02-17/index.md) - JavaScriptのコールスタックとイベントループ
 * 2022-02-10 - [セッション 5](./sessions/2022-02-10/index.md) - .NET 入門
-* 2022-02-03 - [セッション 4](./sessions/2022-02-03/index.md) - Composer と PSR4
-* 2022-01-27 - [セッション 3](./sessions/2022-01-27/index.md) - デジタルマーケティング部
 
 ------
 

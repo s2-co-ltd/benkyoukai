@@ -2,6 +2,8 @@
 
 過去に開催された勉強会、また今後開催される勉強会がある場合はそのアーカイブです。
 
+* 2022-03-10 - [セッション 9](./sessions/2022-03-10/index.md) - 非同期なJavaScript (Async/Await)
+* 2022-03-03 - [セッション 8](./sessions/2022-03-03/index.md) - Salesforce
 * 2022-02-24 - [セッション 7](./sessions/2022-02-24/index.md) - 開発者のためのUI/UX
 * 2022-02-17 - [セッション 6](./sessions/2022-02-17/index.md) - JavaScriptのコールスタックとイベントループ
 * 2022-02-10 - [セッション 5](./sessions/2022-02-10/index.md) - .NET 入門
