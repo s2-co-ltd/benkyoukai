@@ -22,13 +22,13 @@ const convertSessionsToEvents = (sessions) => {
   for (let i = 0; i < sessions.length; i++) {
     const n = buildEventObject(
       sessions[i].date,
-      "18:00",
+      "18:00:00",
       sessions[i].date,
-      "19:00",
+      "19:00:00",
       "勉強会" + sessions[i].number,
       sessions[i].number + " " + "勉強会" + sessions[i].title,
       "https://us02web.zoom.us/j/85816107329?pwd=elVWME5IbkVUM2JodFZOZUM0eXhqZz09",
-      "",
+      sessions[i].presenter,
       ""
     );
     result.push(n);
@@ -72,7 +72,7 @@ function buildEventObject(
 
   const event = {
     title: scheduleDetails,
-    description: notes + "\n\n" + schedule + "\n\n" + "参加者\n" + participants,
+    description: notes + "\n\n" + schedule + "\n\n" + "担当者\n" + participants,
     location: facility,
   };
 
