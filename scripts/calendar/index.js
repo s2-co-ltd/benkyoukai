@@ -49,11 +49,11 @@ function buildEventObject(
 ) {
   let [sDTimestamp, isAllDay] = combineDateAndTime(startDate, startTime);
   let sD = new Date(
-    moment(new Date(sDTimestamp)).subtract({ hours: 9 }).valueOf()
+    moment(new Date(sDTimestamp)).valueOf()
   );
   let [eDTimestamp] = combineDateAndTime(endDate, endTime);
   let eD = new Date(
-    moment(new Date(eDTimestamp)).subtract({ hours: 9 }).valueOf()
+    moment(new Date(eDTimestamp)).valueOf()
   );
 
   const sFormatted = moment(sD).format("YYYY-MM-DD HH:mm");
