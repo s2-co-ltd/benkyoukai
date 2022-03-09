@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/s2-co-ltd/benkyoukai/issues"
   },
-  "homepage": "https://github.com/s2-co-ltd/benkyoukai#readme"
+  "homepage": "https://github.com/s2-co-ltd/benkyoukai#readme",
+  "dependencies": {
+    "ics": "^2.35.0",
+    "moment": "^2.29.1"
+  }
 }
