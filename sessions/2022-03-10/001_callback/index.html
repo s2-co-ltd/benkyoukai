@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="flex-container">
+    <div id="main" class="content-container">
+      <div>
+        <p class="title">場所</p>
+        <p class="content" id="location"></p>
+
+        <p class="title">外気温度</p>
+        <p class="content" id="temperature"></p>
+      </div>
+      <div id="context-sentence-area">
+        <p id="description">This is a pen.</p>
+      </div>
+    </div>
+    <div id="loading">Loading...</div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
