@@ -4,11 +4,11 @@
 
 # セッション
 
-* 2022-03-17 - [セッション 10](./sessions/2022-03-17/index.md) - 未決定
-* 2022-03-10 - [セッション 9](./sessions/2022-03-10/index.md) - 非同期なJavaScript (Async/Await)
+* 2022-03-24 - [セッション 11](./sessions/2022-03-24/index.md) - 文字コード・エンコードのはなし
+* 2022-03-17 - [セッション 10](./sessions/2022-03-17/index.md) - Python で GUI 操作を自動化する外部ライブラリの紹介
+* 2022-03-10 - [セッション 9](./sessions/2022-03-10/index.md) - 非同期な JavaScript (Async/Await)
 * 2022-03-03 - [セッション 8](./sessions/2022-03-03/index.md) - Salesforce
 * 2022-02-24 - [セッション 7](./sessions/2022-02-24/index.md) - 開発者のためのUI/UX
-* 2022-02-17 - [セッション 6](./sessions/2022-02-17/index.md) - JavaScriptのコールスタックとイベントループ
 
 ------
 
