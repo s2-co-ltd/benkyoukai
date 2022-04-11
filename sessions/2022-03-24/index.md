@@ -8,4 +8,4 @@
 
 ## 資料
 
-まだアップロードされていません。
+- [プレゼン](https://docs.google.com/presentation/d/11EygH0YKxir5wmNSgC9yHDmyY9oRvJvluzAJgixc7BU/edit?usp=sharing)
